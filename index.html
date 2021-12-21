@@ -11,49 +11,61 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <!-- Навигация -->
-      <nav>
-        <a href="./index.html" class="link header-logo">
-          <span class="header-logo-design">Web</span>Studio</a
-        >
-        <ul class="header-site-nav">
-          <li class="list">
-            <a href="./index.html" class="link header-current"> Студия </a>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="link header-logo">
+            <span class="header-logo-design">Web</span>Studio</a
+          >
+          <!-- <div class="header-nav"> -->
+       
+            <ul class="header-site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link header-current"> Студия </a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link"> Портфолио </a>
+            </li>
+            <li class="item"><a href=" " class="link"> Контакты </a></li>
+          </ul>
+        </nav>
+        <!-- Контакты -->
+        <ul class="header-site-auth list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+              info@devstudio.com
+            </a>
           </li>
           <li class="list">
-            <a href="./portfolio.html" class="link"> Портфолио </a>
+            <a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a>
           </li>
-          <li class="list"><a href=" " class="link"> Контакты </a></li>
         </ul>
-      </nav>
-      <!-- Контакты -->
-      <ul class="header-site-auth">
-        <li class="list">
-          <a href="mailto:info@devstudio.com" class="link">
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="list">
-          <a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a>
-        </li>
-      </ul>
+          </div>
+        
+      </div>
     </header>
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-primary-button">
           Заказать услугу
         </button>
       </section>
       <!-- Преимущества -->
-      <section class="section advantage">
+      <section class="section advantage container">
         <h2
           class="section-title advantage-visually-hidden advantage-main-title"
         >
@@ -91,7 +103,7 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="section directions">
+      <section class="section directions container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul>
           <li class="list">
@@ -121,7 +133,7 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section class="section our-team">
+      <section class="section our-team container">
         <h2 class="section-title">Наша команда</h2>
         <ul>
           <li class="list">
@@ -152,7 +164,7 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
+    <footer class="footer container">
       <a href="./index.html" class="link logo footer-logo">
         <span class="footer-logo-design">Web</span>Studio</a
       >
