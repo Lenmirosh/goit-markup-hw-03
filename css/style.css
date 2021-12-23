@@ -229,8 +229,7 @@ p {
 }
 
 .advantage .list .item {
-  flex-basis: calc((100% - 90) / 4);
-  /* min-width: 270px; */
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .advantage .list .item:not(:nth-child(4n)) {
@@ -246,6 +245,10 @@ p {
 .directions .list {
   display: flex;
   align-items: center;
+}
+
+.directions .list .item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .directions .list .item:not(:nth-child(3n)) {
@@ -271,9 +274,18 @@ p {
   text-align: center;
 }
 
+.our-team .list .item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .our-team .list .item:not(:nth-child(4n)) {
   margin-right: var(--variable-grid);
 }
+
+/* .our-team .list .item {
+
+  text-align: center;
+} */
 
 .our-team .our-team-employee {
   font-weight: 500;
