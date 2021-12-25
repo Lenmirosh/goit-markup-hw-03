@@ -164,15 +164,12 @@ p {
 /* HERO */
 
 .hero-container-main {
-  background-color: var(--footer-bacground-color);
-}
-
-.hero-container {
   display: block;
   margin: 0 auto;
   text-align: center;
-  padding-top: 0px;
-  padding-bottom: 0pt;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--footer-bacground-color);
 }
 
 .hero-title {
@@ -208,12 +205,9 @@ p {
 
 /* ADVANTAGE */
 
-.advantage-main {
-  background-color: var(--white-color);
-}
-
 .advantage {
   padding-bottom: 0px;
+  background-color: var(--white-color);
 }
 
 .advantage-title {
@@ -238,10 +232,13 @@ p {
 
 /* DIRECTIONS */
 
-.directions-main {
+.directions {
   background-color: var(--white-color);
 }
 
+.directions-main {
+  padding-top: 0px;
+}
 .directions .list {
   display: flex;
   align-items: center;
@@ -265,7 +262,7 @@ p {
 
 /* OUR TEAM */
 
-.our-team-main {
+.our-team {
   background-color: var(--primary-background-color);
 }
 
@@ -299,8 +296,17 @@ p {
   line-height: 1.19;
 }
 
+.our-team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .our-team-photo {
-  margin-bottom: var(--variable-grid);
+  display: block;
 }
 
 .our-team-employee {
@@ -308,11 +314,12 @@ p {
 }
 
 /* FOOTER */
-.footer-main {
+
+.footer {
   background-color: var(--footer-bacground-color);
 }
 
-.footer {
+.footer-main {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -329,13 +336,14 @@ p {
   color: var(--accent-color);
 }
 
-.footer.container > a {
+.footer-main .footer-logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
-.footer-contact .futer-item {
+/* .footer-contact .futer-item {
   margin-top: 20px;
-}
+} */
 
 .footer-contact {
   font-style: normal;
@@ -346,6 +354,10 @@ p {
 }
 .footer-contact .contact-location {
   color: var(--white-color);
+}
+
+.futer-item .list:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* BUTTONS */
@@ -410,8 +422,13 @@ p {
   /* background-color: royalblue; */
   font-size: 16px;
   line-height: 1.88;
+  color: var(--primary-text-color);
+}
+.gallery.list .link {
+  display: block;
 }
 
+/* gallery-card-description */
 .gallery-photo {
   display: block;
 }
