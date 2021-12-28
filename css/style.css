@@ -36,7 +36,7 @@ p {
   padding-left: 0px;
 }
 
-*img {
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -326,10 +326,6 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-photo {
-  display: block;
-}
-
 .our-team-employee {
   margin-bottom: 10px;
 }
@@ -425,6 +421,16 @@ p {
   clip: rect(0 0 0 0);
 }
 
+.section.list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.gallery-main.container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .item .title-works {
   margin-top: 0px;
   margin-bottom: 4px;
@@ -451,9 +457,6 @@ p {
 }
 
 /* gallery-card-description */
-.gallery-photo {
-  display: block;
-}
 
 .gallery-button {
   display: flex;
